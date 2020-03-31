@@ -23,7 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4728bc90-4aea-4363-87ca-d2bd97f72164" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/build.gradle" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/proguard-rules.pro" beforeDir="false" />
@@ -79,8 +79,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/algonquincollege/skai0001/geoquiz/QuizActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-246">
-              <caret line="79" column="91" lean-forward="true" selection-start-line="79" selection-start-column="91" selection-end-line="79" selection-end-column="91" />
+            <state relative-caret-position="294">
+              <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1701#1852#0" expanded="true" />
@@ -153,7 +153,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -340,6 +340,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.2160229" />
@@ -413,8 +414,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/algonquincollege/skai0001/geoquiz/QuizActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-246">
-          <caret line="79" column="91" lean-forward="true" selection-start-line="79" selection-start-column="91" selection-end-line="79" selection-end-column="91" />
+        <state relative-caret-position="294">
+          <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1701#1852#0" expanded="true" />
