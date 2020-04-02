@@ -728,6 +728,10 @@
         "source": "/Users/hasansk/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/color/abc_background_cache_hint_selector_material_light.xml"
     },
     {
+        "merged": "/Users/hasansk/Desktop/Android/GeoQuiz/app/build/intermediates/res/merged/debug/layout_activity_cheat.xml.flat",
+        "source": "/Users/hasansk/Desktop/Android/GeoQuiz/app/src/main/res/layout/activity_cheat.xml"
+    },
+    {
         "merged": "/Users/hasansk/Desktop/Android/GeoQuiz/app/build/intermediates/res/merged/debug/drawable_abc_item_background_holo_dark.xml.flat",
         "source": "/Users/hasansk/.gradle/caches/transforms-2/files-2.1/f6a183f8595ca34f3d5cc99d1f8bc322/appcompat-1.0.2/res/drawable/abc_item_background_holo_dark.xml"
     },
