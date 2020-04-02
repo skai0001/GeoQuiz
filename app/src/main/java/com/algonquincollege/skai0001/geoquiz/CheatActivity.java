@@ -36,7 +36,6 @@ public class CheatActivity extends AppCompatActivity {
                 }
                 setAnswerShownResult(true);
             }
-
         });
     }
 

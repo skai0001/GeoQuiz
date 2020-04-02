@@ -8,6 +8,7 @@
 package com.algonquincollege.skai0001.geoquiz;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -32,8 +33,7 @@ public class QuizActivity extends AppCompatActivity {
     private static final int REQUEST_CODE_CHEAT = 0;
     private int answerCounter = 0;
     private boolean mIsCheater;
-    int messageResId;
-    CheatActivity mCheatActivity = new CheatActivity();
+    private int mCurrentIndex = 0;
 
     private Question[] mQuestionBank = new Question[]{
             new Question(R.string.question_australia, true),
@@ -43,8 +43,6 @@ public class QuizActivity extends AppCompatActivity {
             new Question(R.string.question_americas, true),
             new Question(R.string.question_asia, true),
     };
-
-    private int mCurrentIndex = 0;
 
 
     @Override
@@ -114,11 +112,7 @@ public class QuizActivity extends AppCompatActivity {
             }
         });
 
-
-        mQuestionTextView =
-
-                findViewById(R.id.question_text_view);
-
+        mQuestionTextView = findViewById(R.id.question_text_view);
         int question = mQuestionBank[mCurrentIndex].getTextResId();
         mQuestionTextView.setText(question);
     }
@@ -136,7 +130,6 @@ public class QuizActivity extends AppCompatActivity {
             }
             mIsCheater = CheatActivity.wasAnswerShown(data);
         }
-
     }
 
 
@@ -150,60 +143,46 @@ public class QuizActivity extends AppCompatActivity {
 
     @Override
     public void onResume() {
-
         super.onResume();
-
         Log.d(TAG, "onResume() called");
     }
 
     @Override
     public void onPause() {
-
         super.onPause();
-
         Log.d(TAG, "onPause() called");
     }
 
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
-
         super.onSaveInstanceState(savedInstanceState);
-
         Log.i(TAG, "onSaveInstanceState");
-
         savedInstanceState.putInt(KEY_INDEX, mCurrentIndex);
     }
 
 
     @Override
     public void onStop() {
-
         super.onStop();
-
         Log.d(TAG, "onStop() called");
     }
 
     @Override
     public void onDestroy() {
-
         super.onDestroy();
-
         Log.d(TAG, "onDestroy() called");
     }
 
     private void updateQuestion() {
-
         int question = mQuestionBank[mCurrentIndex].getTextResId();
         mQuestionTextView.setText(question);
         mTrueButton.setEnabled(true);
         mFalseButton.setEnabled(true);
-
-
     }
 
     private void checkAnswer(boolean userPressedTrue) {
         boolean answerIsTrue = mQuestionBank[mCurrentIndex].isAnswerTrue();
-        messageResId = 0;
+        int messageResId = 0;
 
         if (mIsCheater) {
             messageResId = R.string.judgment_toast;
@@ -219,12 +198,9 @@ public class QuizActivity extends AppCompatActivity {
                 messageResId = R.string.incorrect_toast;
                 mTrueButton.setEnabled(false);
                 mFalseButton.setEnabled(false);
-
             }
         }
-        Toast.makeText(this, messageResId, Toast.LENGTH_SHORT)
-
-                .show();
+        Toast.makeText(this, messageResId, Toast.LENGTH_SHORT).show();
     }
 
 }
