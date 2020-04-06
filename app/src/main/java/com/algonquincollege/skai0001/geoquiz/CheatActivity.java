@@ -1,3 +1,10 @@
+/*
+ *   Author : Hasan Skaiky
+ *   Book : Android Programming: The Big Nerd Ranch Guide (3rd Edition)
+ *   page #20
+ * */
+
+
 package com.algonquincollege.skai0001.geoquiz;
 
 import androidx.appcompat.app.AppCompatActivity;
